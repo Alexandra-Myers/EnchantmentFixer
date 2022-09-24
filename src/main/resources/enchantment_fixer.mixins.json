@@ -1,0 +1,16 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.atlas.enchantment_fixer.mixin",
+  "plugin": "com.atlas.enchantment_fixer.mixin.MixinPlugin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "EnchantmentHelperMixin"
+  ],
+  "client": [
+    "TitleScreenMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+	}
+}

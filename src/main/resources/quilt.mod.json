@@ -1,0 +1,39 @@
+{
+	"schema_version": 1,
+	"quilt_loader": {
+		"group": "com.atlas",
+		"id": "enchantment_fixer",
+		"version": "${version}",
+		"metadata": {
+			"name": "Enchantment Fixer",
+			"description": "Allows for custom enchantments to appear in the Enchanting Table without ASN.",
+			"contributors": {
+				"Alexandra": "Owner"
+			},
+			"contact": {
+				"issues": "https://github.com/QuiltMC/quilt-template-mod/issues",
+				"sources": "https://github.com/QuiltMC/quilt-template-mod"
+			},
+			"icon": "assets/example_mod/icon.png"
+		},
+		"intermediate_mappings": "net.fabricmc:intermediary",
+		"entrypoints": {
+			"init": "com.atlas.enchantment_fixer.EnchantmentFixer"
+		},
+		"depends": [
+			{
+				"id": "quilt_loader",
+				"versions": ">=0.17.0-"
+			},
+			{
+				"id": "quilted_fabric_api",
+				"versions": ">=4.0.0-"
+			},
+			{
+				"id": "minecraft",
+				"versions": ">=1.19.2"
+			}
+		]
+	},
+	"mixin": "enchantment_fixer.mixins.json"
+}
